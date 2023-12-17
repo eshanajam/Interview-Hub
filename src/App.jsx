@@ -4,6 +4,9 @@ import Home from "./components/Home";
 import CompanySignup from "./components/company/CompanySignup";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hub from "./components/Hub";
+import CompanyDashboard from "./components/company/CompanyDashboard";
+import CompanySideMenu from "./components/company/CompanySideMenu";
+import SideMenu from "./components/jobseeker/SideMenu";
 function App() {
   return (
     <>
@@ -15,6 +18,8 @@ function App() {
           <Route path="/about" element={"About"} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<CompanySignup />} />
+          <Route path="/company-dashboard" element={<CompanySideMenu />} />
+          <Route path="/jobseeker-dashboard" element={<SideMenu />} />
         </Routes>
       </BrowserRouter>
     </>

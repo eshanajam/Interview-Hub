@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 const CompanySignup = () => {
   return (
     <div>
-        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img
+          {/* <img
             className="mx-auto h-10 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt="Your Company"
-          />
+          /> */}
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Sign up to Interview Hub 
+            Sign up to Interview Hub
           </h2>
         </div>
 
@@ -20,7 +20,7 @@ const CompanySignup = () => {
           <form className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="CompanyName" className="block text-sm font-medium leading-6 text-gray-900">
-                Company Name 
+                Company Name
               </label>
               <div className="mt-2">
                 <input
@@ -65,7 +65,7 @@ const CompanySignup = () => {
             </div>
             <div>
               <label htmlFor="ContactPerson" className="block text-sm font-medium leading-6 text-gray-900">
-              Contact Person
+                Contact Person
               </label>
               <div className="mt-2">
                 <input
@@ -80,7 +80,7 @@ const CompanySignup = () => {
             </div>
             <div>
               <label htmlFor="ContactEmail" className="block text-sm font-medium leading-6 text-gray-900">
-              Contact Email
+                Contact Email
               </label>
               <div className="mt-2">
                 <input
@@ -95,7 +95,7 @@ const CompanySignup = () => {
             </div>
             <div>
               <label htmlFor="ContactPhoneNumber" className="block text-sm font-medium leading-6 text-gray-900">
-              Contact Phone Number
+                Contact Phone Number
               </label>
               <div className="mt-2">
                 <input
@@ -110,7 +110,7 @@ const CompanySignup = () => {
             </div>
             <div>
               <label htmlFor="Username" className="block text-sm font-medium leading-6 text-gray-900">
-              Username
+                Username
               </label>
               <div className="mt-2">
                 <input
@@ -152,7 +152,7 @@ const CompanySignup = () => {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign up 
+                Sign up
               </button>
             </div>
           </form>
@@ -160,13 +160,13 @@ const CompanySignup = () => {
           <p className="mt-10 text-center text-sm text-gray-500">
             Already a member?{' '}
             <Link to={"/login"}>
-            <span  className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Login Now!
-            </span>
+              <span className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                Login Now!
+              </span>
             </Link>
           </p>
         </div>
-    </div>          
+      </div>
     </div>
   )
 }
